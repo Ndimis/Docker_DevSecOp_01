@@ -3,3 +3,15 @@ Dockerisation of simple python App :
 1) Creation du fichier  Dockerfile [Qui contiendra les instructions nécessaires à la création de l'environnement Docker]
 ---->Allez sur le docker hub pour voir les instruction afin d'installer python :
     FROM python: latest [Pour installer la derniere version de python]
+----> COPY main.py /[On copy le fichier main.py vers la racine /]
+----> CMD ["python","/main.py"] [on demande l'èxècution de python et de main.py]
+
+2) Compilation du dockerfile 
+----> docker build -t nom_de_image
+----> docker image ls [On voit toutes les images existante]
+
+3) Lancer l=notre image :
+----> docker run nom_de_image
+
+4) Distribuer l'image en fichier :
+----> docker save nom_de_image -o nom_de_image.tar
