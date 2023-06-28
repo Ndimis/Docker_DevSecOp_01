@@ -14,4 +14,4 @@ Dockerisation of simple python App :
 ----> docker run nom_de_image
 
 4) Distribuer l'image en fichier :
-----> docker save nom_de_image -o nom_de_image.tar
+----> docker save nom_de_image -o nom_de_image.tar ou .zip
