@@ -1,0 +1,5 @@
+Dockerisation of simple python App :
+
+1) Creation du fichier  Dockerfile [Qui contiendra les instructions nécessaires à la création de l'environnement Docker]
+---->Allez sur le docker hub pour voir les instruction afin d'installer python :
+    FROM python: latest [Pour installer la derniere version de python]
